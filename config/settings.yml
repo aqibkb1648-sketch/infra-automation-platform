@@ -1,0 +1,22 @@
+application:
+  name: infra-automation-platform
+  version: "1.0.0"
+  environment: local
+
+runtime:
+  command_timeout: 10
+  log_level: INFO
+
+network:
+  ping_count: 2
+  dns_timeout: 5
+  default_ports:
+    - 22
+    - 80
+    - 443
+
+reporting:
+  format: json
+  output_dir: reports
+  log_dir: logs
+  timestamp: true

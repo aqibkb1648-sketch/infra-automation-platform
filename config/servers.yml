@@ -1,0 +1,27 @@
+project:
+  name: infra-automation-platform
+  environment: local
+
+servers:
+  - name: client1
+    container: clab-lab01-client1
+    role: client
+    management_ip: 172.20.20.2
+
+  - name: router1
+    container: clab-lab01-router1
+    role: router
+    management_ip: 172.20.20.3
+
+  - name: server1
+    container: clab-lab01-server1
+    role: server
+    management_ip: 172.20.20.4
+    services:
+      - name: nginx-http
+        port: 80
+        protocol: http
+
+      - name: nginx-https
+        port: 443
+        protocol: https
