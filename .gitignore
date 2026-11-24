@@ -24,3 +24,9 @@ backups/
 # OS
 .DS_Store
 Thumbs.db
+
+# Python virtual environment
+.venv/
+
+# Generated remote health reports
+remote-health-report.json
