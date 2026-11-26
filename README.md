@@ -165,9 +165,10 @@ This version is designed and tested for a local WSL Ubuntu and Containerlab envi
 
 It focuses on infrastructure monitoring, Linux diagnostics, network troubleshooting, and automation fundamentals.
 
-Remote SSH and public cloud integrations are not included in the current version.
+Remote Linux health checks are supported through Python and SSH using Paramiko. The remote checker collects system information, executes diagnostic commands, handles command failures, and generates a structured JSON health report.
+
+Public cloud integrations are not included in the current version.
 
 ## License
 
 Add a license before distributing this project publicly.
-
